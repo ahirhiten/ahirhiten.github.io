@@ -10,16 +10,25 @@
     >
     <meta name="theme-color" content="#10231c">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://your-domain.com/contact.html">
+    <link rel="canonical" href="https://hiten-ahir30.github.io/contact.html">
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="manifest" href="site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Sora:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
+      onload="this.onload=null;this.rel='stylesheet'"
     >
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Sora:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+      >
+    </noscript>
     <script>document.documentElement.classList.add("js");</script>
+    <link rel="preload" href="styles.css" as="style">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -74,7 +83,10 @@
         </div>
 
         <form class="contact-form reveal" aria-describedby="form-note" data-contact-form>
+          <input type="hidden" name="access_key" value="7fb3498a-1d9c-4fc3-ab55-26cf0c6ec04d">
           <input type="hidden" name="subject" value="New website project inquiry for Ahir">
+          <input type="hidden" name="from_name" value="Ahir Portfolio Contact Form">
+          <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" hidden>
           <div class="field-row">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" autocomplete="name" required>
@@ -115,7 +127,7 @@
             <textarea id="message" name="message" rows="7" placeholder="Example: I need a website for my service business. The main goal is to get more serious enquiries, look more credible, and explain our services clearly. My current site is..." required></textarea>
           </div>
           <p class="form-note" id="form-note" data-form-note>
-            This form opens your email app with the project details. If it does not open, email me directly at ahirhiten789@gmail.com.
+            Send your project details here. If the form is unavailable, email me directly at ahirhiten789@gmail.com.
           </p>
           <button class="button button-primary full-button" type="submit">Send Project Details</button>
         </form>
