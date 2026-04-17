@@ -5,7 +5,7 @@ Static production-ready portfolio site based on `project.md`.
 ## Files
 
 - `index.html`: main single-page sales portfolio
-- `contact.html`: dedicated contact page
+- `contact/index.html`: dedicated contact page
 - `styles.css`: responsive visual system and layout
 - `script.js`: navigation, reveal animations, year, and Web3Forms contact form submission
 - `assets/favicon.svg`: site icon
@@ -45,7 +45,7 @@ rg "placeholder|approved for public use|Ahir"
 This site has no build step. Upload only these production files and folders:
 
 - `index.html`
-- `contact.html`
+- `contact/`
 - `404.html`
 - `styles.css`
 - `script.js`
@@ -82,7 +82,7 @@ The contact form submits through Web3Forms and keeps the existing UI unchanged.
 Before going live:
 
 1. Create a free Web3Forms account and copy your access key.
-2. Open `contact.html`.
+2. Open `contact/`.
 3. Replace `YOUR_WEB3FORMS_ACCESS_KEY` with your real key in the hidden `access_key` input.
 
 The submit flow is handled in `script.js` with a direct POST request to the Web3Forms endpoint, so no backend is required.
