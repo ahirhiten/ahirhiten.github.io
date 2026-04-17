@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff7e5"/>
+      <stop offset="0.55" stop-color="#efe0ba"/>
+      <stop offset="1" stop-color="#d6ff69"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1020" cy="90" r="190" fill="#c9703c" opacity="0.45"/>
+  <circle cx="150" cy="520" r="180" fill="#10231c" opacity="0.14"/>
+  <rect x="70" y="70" width="1060" height="490" rx="44" fill="#10231c"/>
+  <rect x="88" y="88" width="1024" height="454" rx="32" fill="#fffaf0"/>
+  <text x="130" y="210" fill="#c9703c" font-family="Sora, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="5">AHIR WEB STUDIO</text>
+  <text x="130" y="335" fill="#10231c" font-family="Georgia, serif" font-size="86" font-weight="700">Premium websites</text>
+  <text x="130" y="430" fill="#10231c" font-family="Georgia, serif" font-size="86" font-weight="700">that move fast.</text>
+  <rect x="800" y="375" width="230" height="76" rx="38" fill="#d6ff69" stroke="#10231c" stroke-width="5"/>
+  <text x="838" y="424" fill="#10231c" font-family="Sora, Arial, sans-serif" font-size="26" font-weight="800">Start a Project</text>
+</svg>

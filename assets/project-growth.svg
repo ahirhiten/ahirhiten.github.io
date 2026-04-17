@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" role="img" aria-labelledby="title desc">
+  <title id="title">B2B conversion page mockup</title>
+  <desc id="desc">A stylized B2B service page with charts and conversion sections.</desc>
+  <rect width="760" height="560" rx="34" fill="#fffaf0"/>
+  <rect x="34" y="34" width="692" height="492" rx="28" fill="#10231c"/>
+  <rect x="70" y="70" width="620" height="420" rx="24" fill="#f8edcf"/>
+  <rect x="104" y="108" width="112" height="20" rx="10" fill="#c9703c"/>
+  <rect x="104" y="160" width="310" height="52" rx="14" fill="#10231c"/>
+  <rect x="104" y="235" width="250" height="17" rx="9" fill="#31473f" opacity=".48"/>
+  <rect x="104" y="264" width="300" height="17" rx="9" fill="#31473f" opacity=".28"/>
+  <g transform="translate(450 122)">
+    <rect width="150" height="150" rx="28" fill="#d6ff69" stroke="#10231c" stroke-width="5"/>
+    <path d="M35 104V76m40 28V42m40 62V58" stroke="#10231c" stroke-width="16" stroke-linecap="round"/>
+  </g>
+  <rect x="104" y="330" width="140" height="96" rx="20" fill="#fffaf0" stroke="#10231c" stroke-width="5"/>
+  <rect x="268" y="330" width="140" height="96" rx="20" fill="#fffaf0" stroke="#10231c" stroke-width="5"/>
+  <rect x="432" y="330" width="140" height="96" rx="20" fill="#fffaf0" stroke="#10231c" stroke-width="5"/>
+  <circle cx="144" cy="365" r="17" fill="#c9703c"/>
+  <circle cx="308" cy="365" r="17" fill="#6d8b45"/>
+  <circle cx="472" cy="365" r="17" fill="#10231c"/>
+  <rect x="132" y="394" width="84" height="12" rx="6" fill="#10231c" opacity=".25"/>
+  <rect x="296" y="394" width="84" height="12" rx="6" fill="#10231c" opacity=".25"/>
+  <rect x="460" y="394" width="84" height="12" rx="6" fill="#10231c" opacity=".25"/>
+</svg>

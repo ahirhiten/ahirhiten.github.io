@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" role="img" aria-labelledby="title desc">
+  <title id="title">Local business website mockup</title>
+  <desc id="desc">A stylized website interface for a premium local service business.</desc>
+  <rect width="760" height="560" rx="34" fill="#fffaf0"/>
+  <rect x="38" y="34" width="684" height="492" rx="30" fill="#6d8b45"/>
+  <path d="M38 215c120-72 232-76 338-12s222 63 346-3v326H38V215Z" fill="#10231c" opacity=".28"/>
+  <rect x="70" y="66" width="620" height="428" rx="24" fill="#f7ecd5"/>
+  <rect x="102" y="104" width="214" height="22" rx="11" fill="#10231c"/>
+  <rect x="490" y="98" width="140" height="36" rx="18" fill="#d6ff69" stroke="#10231c" stroke-width="4"/>
+  <rect x="102" y="166" width="290" height="58" rx="15" fill="#10231c"/>
+  <rect x="102" y="244" width="250" height="16" rx="8" fill="#31473f" opacity=".52"/>
+  <rect x="102" y="274" width="198" height="16" rx="8" fill="#31473f" opacity=".34"/>
+  <rect x="102" y="334" width="172" height="52" rx="26" fill="#c9703c" stroke="#10231c" stroke-width="5"/>
+  <g transform="translate(424 160)">
+    <rect width="190" height="250" rx="28" fill="#10231c"/>
+    <rect x="18" y="18" width="154" height="214" rx="20" fill="#fffaf0"/>
+    <circle cx="95" cy="86" r="48" fill="#e6f2c8"/>
+    <path d="M50 181c20-44 70-62 114-22v34H50v-12Z" fill="#6d8b45"/>
+  </g>
+  <rect x="102" y="430" width="122" height="28" rx="14" fill="#10231c" opacity=".18"/>
+  <rect x="244" y="430" width="122" height="28" rx="14" fill="#10231c" opacity=".18"/>
+</svg>
