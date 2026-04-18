@@ -78,6 +78,26 @@ if (navToggle && navPanel) {
   });
 }
 
+// Smooth scroll for anchor links
+document.addEventListener("click", (event) => {
+  const link = event.target.closest("a[href^='#']");
+  if (!link) return;
+  
+  const targetId = link.getAttribute("href").substring(1);
+  const target = document.getElementById(targetId);
+  
+  if (target) {
+    event.preventDefault();
+    const topOffset = 110;
+    const targetPosition = target.getBoundingClientRect().top + window.scrollY - topOffset;
+    
+    window.scrollTo({
+      top: targetPosition,
+      behavior: "smooth"
+    });
+  }
+});
+
 if ("IntersectionObserver" in window) {
   const revealObserver = new IntersectionObserver(
     (entries) => {
