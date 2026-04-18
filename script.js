@@ -3,12 +3,21 @@ const navToggle = document.querySelector("[data-nav-toggle]");
 const navPanel = document.querySelector("[data-nav-panel]");
 const yearNodes = document.querySelectorAll("[data-year]");
 const revealNodes = document.querySelectorAll(".reveal");
+const sentinel = document.querySelector("#scroll-sentinel");
 const mobileNavQuery = window.matchMedia("(max-width: 980px)");
 
-const setHeaderState = () => {
-  if (!header) return;
-  header.classList.toggle("is-scrolled", window.scrollY > 16);
-};
+const headerObserver = new IntersectionObserver(
+  ([entry]) => {
+    if (header) {
+      header.classList.toggle("is-scrolled", !entry.isIntersecting);
+    }
+  },
+  { threshold: [0] }
+);
+
+if (sentinel) {
+  headerObserver.observe(sentinel);
+}
 
 const setMobileNavigationState = (isOpen) => {
   if (!navToggle || !navPanel) return;
@@ -40,11 +49,11 @@ yearNodes.forEach((node) => {
   node.textContent = new Date().getFullYear();
 });
 
-setHeaderState();
-window.addEventListener("scroll", setHeaderState, { passive: true });
-
 if (navToggle && navPanel) {
+  // Initialize mobile navigation state
   setMobileNavigationState(false);
+  
+  // Reset navigation when viewport changes
   mobileNavQuery.addEventListener("change", () => setMobileNavigationState(false));
 
   navToggle.addEventListener("click", () => {

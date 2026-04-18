@@ -29,13 +29,59 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at top left, rgba(217, 119, 87, 0.13), transparent 32rem),
-    radial-gradient(circle at 90% 5%, rgba(176, 87, 48, 0.1), transparent 28rem),
+    radial-gradient(circle at top left, rgba(217, 119, 87, 0.13), transparent clamp(20rem, 50vw, 32rem)),
+    radial-gradient(circle at 90% 5%, rgba(176, 87, 48, 0.1), transparent clamp(18rem, 45vw, 28rem)),
     linear-gradient(180deg, var(--paper) 0%, #f3f0e8 100%);
   color: var(--ink);
   font-family: var(--font-body);
   line-height: 1.6;
   overflow-x: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #eeece2;
+    --ink-soft: #c4c1b5;
+    --paper: #1a1915;
+    --line: #2d2b23;
+    --white: #141413;
+    --cream: #3d3929;
+  }
+
+  body {
+    background:
+      radial-gradient(circle at top left, rgba(217, 119, 87, 0.2), transparent clamp(20rem, 50vw, 32rem)),
+      radial-gradient(circle at 90% 5%, rgba(176, 87, 48, 0.15), transparent clamp(18rem, 45vw, 28rem)),
+      linear-gradient(180deg, #1a1915 0%, #0f0d0a 100%);
+  }
+
+  .site-header {
+    background: rgba(26, 25, 21, 0.94);
+  }
+
+  .site-header.is-scrolled {
+    background: rgba(26, 25, 21, 0.98);
+  }
+
+  .browser-card {
+    background: #2d2b23;
+  }
+
+  .browser-top {
+    background: #eeece2;
+  }
+
+  .browser-top span {
+    background: #141413;
+  }
+
+  .browser-top span:nth-child(2) {
+    background: var(--lime);
+  }
+
+  .browser-top span:nth-child(3) {
+    background: var(--copper);
+  }
 }
 
 main > section:not(:first-child),
@@ -1355,10 +1401,16 @@ textarea:focus {
   transform: none;
 }
 
+#scroll-sentinel {
+  height: 1px;
+  position: absolute;
+  top: 100px;
+}
+
 .js .reveal {
-  opacity: 1;
+  opacity: 0;
   transform: translateY(14px);
-  transition: transform 620ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition: transform 620ms cubic-bezier(0.22, 1, 0.36, 1), opacity 620ms ease;
 }
 
 .js .reveal.is-visible {
